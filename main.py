@@ -13,6 +13,7 @@ def bootUp():
     py.display.set_caption('Testing mouse functions')
 
 def main():
+<<<<<<< HEAD
     run = True
     while run:
         #returns tuple of boolean on MOUSEBUTTONDOWN, MOUSEBUTTONUP, MOUSEMOTION
@@ -45,6 +46,9 @@ def test():
                 #print event.button
                 print py.mouse.get_pos()
     py.display.quit()
+=======
+    print("hewwo world")
+>>>>>>> 7431cdf863ecb5e2126e925fb1a66809f3fe3b88
 
 if __name__ == "__main__":
     print("Starting....")
