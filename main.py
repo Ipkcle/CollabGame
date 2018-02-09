@@ -1,6 +1,6 @@
 #import pygame as py
 
-import pygame
+import pygame as py
 from pygame.locals import *
 
 '''Initilizes and sets up the display window and a couple other things.
@@ -31,20 +31,20 @@ def main():
             run = False
 
 def test():
-    pygame.init()
-    pygame.display.set_mode((300,200))
-    pygame.display.set_caption('Testing')
+    py.init()
+    py.display.set_mode((300,200))
+    py.display.set_caption('Testing')
     running = True
     while running:
-        for event in pygame.event.get():
+        for event in py.event.get():
             if event.type == QUIT:
                 running = False
             if event.type == KEYDOWN and event.key == K_ESCAPE:
                 running = False
             if event.type == MOUSEBUTTONDOWN:
                 #print event.button
-                print pygame.mouse.get_pos()
-    pygame.display.quit()
+                print py.mouse.get_pos()
+    py.display.quit()
 
 if __name__ == "__main__":
     print("Starting....")
